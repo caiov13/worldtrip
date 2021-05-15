@@ -1,22 +1,23 @@
 import { Flex, Heading, Icon, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverTrigger, Text } from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
+import { ContinentProps } from "../../pages/continent/[slug]";
 
-export default function Infos() {
+export default function Infos({ continent }: ContinentProps) {
     return(
         <Flex
          align="center"
          justify="space-between"
         >
             <Flex direction="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">50</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">{continent.countries}</Heading>
                 <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.700">Países</Text>
             </Flex>
             <Flex direction="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">60</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">{continent.languages}</Heading>
                 <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.700">línguas</Text>
             </Flex>
             <Flex direction="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">27</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">{continent.cities}</Heading>
                 <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.700">
                     cidades +100
 
@@ -30,7 +31,7 @@ export default function Infos() {
                             <PopoverArrow bg="gray.700" />
                             <PopoverCloseButton />
                             <PopoverBody fontWeight="400" fontSize="lg">
-                                Paris, Europa, Chile, Canadá, China
+                                {continent.cities_list}
                             </PopoverBody>
                         </PopoverContent>
                     </Popover>
