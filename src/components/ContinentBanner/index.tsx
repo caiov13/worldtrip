@@ -26,3 +26,5 @@ export default function ContinentBanner({ continent }: ContinentProps) {
         </Flex>
     );
 }
+
+// hello
