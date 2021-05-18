@@ -6,7 +6,7 @@
 
 <div align="center">
 
-![gif do projeto](https://github.com/caiov13/worldtrip/blob/main/github/worldtrip.gif)
+![gif do projeto](https://github.com/caiov13/worldtrip/blob/main/github/world-trip.gif)
 
 </div>
 
