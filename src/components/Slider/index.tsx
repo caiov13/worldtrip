@@ -4,6 +4,8 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 's
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ContinentProps } from "../../pages";
 
+SwiperCore.use([Navigation, Pagination, A11y])
+
 export default function Slider({continents}: ContinentProps) {
     return(
         <Flex
